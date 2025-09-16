@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sasa Connect - Leading offshore BPO company providing omnichannel customer support services including voice, email, chat, and social media support across multiple industries.">
+    <meta name="keywords" content="BPO, offshore customer support, call center, omnichannel, voice services, email support, live chat, social media management">
+    <title>Sasa Connect - Offshore BPO & Customer Support Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(11,61,145,0.9) 0%, rgba(0,75,58,0.9) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .industry-icon {
+            transition: all 0.3s ease;
+        }
+        .industry-icon:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                        <div class="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xl">SC</div>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Sasa Connect</span>
+                    </a>
+                    <div class="hidden md:ml-8 md:flex md:space-x-8">
+                        <a href="#about" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About Us</a>
+                        <a href="#services" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Services</a>
+                        <a href="#industries" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Industries</a>
+                        <a href="#contact" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700">Request Quote</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                        <span class="sr-only">Open menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#about" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About Us</a>
+                <a href="#services" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Services</a>
+                <a href="#industries" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Industries</a>
+                <a href="#contact" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-24 pb-12 md:pt-32 md:pb-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                <div class="mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Professional Offshore BPO Services with Sasa Connect</h1>
+                    <p class="text-xl md:text-2xl mb-8">Specialized customer support solutions including voice, email, chat, and social media services for growing businesses worldwide.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-semibold text-center shadow-lg transform transition hover:scale-105">Get Free Consultation</a>
+                        <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 px-8 py-3 rounded-md text-lg font-semibold text-center shadow-md transform transition hover:scale-105">View Services</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Customer service team working in modern office environment" class="rounded-lg shadow-2xl border-4 border-white">
+                    <div class="absolute -bottom-4 -left-4 bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-md hidden md:block">
+                        <p class="font-bold">Round-the-Clock Support</p>
+                        <p>Available when your customers need us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">
+                        About Sasa Connect
+                    </h2>
+                    <p class="text-gray-600 mb-4">
+                        Established BPO service provider specializing in omnichannel customer support solutions. We help businesses enhance their customer experience through professional, reliable offshore support services.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our mission is to provide cost-effective, high-quality customer service solutions that help businesses scale efficiently while maintaining excellent customer satisfaction levels.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <div class="text-3xl font-bold text-indigo-600">500+</div>
+                            <div class="text-gray-500">Trained Agents</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-indigo-600">50+</div>
+                            <div class="text-gray-500">Active Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-indigo-600">3</div>
+                            <div class="text-gray-500">Service Centers</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-indigo-600">18hrs</div>
+                            <div class="text-gray-500">Daily Coverage</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Professional customer service representatives in training" class="rounded-lg shadow-xl border-4 border-white">
+                    <div class="absolute -bottom-6 -right-6 bg-indigo-600 text-white p-4 rounded-lg shadow-lg border-t-4 border-indigo-400 hidden md:block">
+                        <p class="font-bold">Quality Focus</p>
+                        <p class="text-sm">Rigorous training • Performance monitoring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our BPO Service Offerings
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Comprehensive customer support services designed to scale with your business
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold text-gray-900">Voice Support</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Professional inbound and outbound call handling with trained agents and quality monitoring.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Customer service calls</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Technical support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Order processing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold text-gray-900">Email Support</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Professional email response management with established response time standards.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Customer inquiries</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Order confirmations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Technical assistance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-comments text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold text-gray-900">Live Chat</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Real-time website chat support to assist visitors and convert leads.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Sales support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Product information</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Lead qualification</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-hashtag text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold text-gray-900">Social Media</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Social media customer service and community management across platforms.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Response management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Review monitoring</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Brand monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-laptop text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold text-gray-900">Back-Office Support</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Administrative and data processing services to support your operations.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Data entry</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Order processing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Document processing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-chart-line text-xl"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold text-gray-900">Analytics & Reporting</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Performance tracking and detailed reporting for all service activities.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Performance metrics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Custom dashboards</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Monthly reports</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Why Choose Sasa Connect?
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Reliable offshore BPO services focused on quality and results
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="mx-auto h-20 w-20 rounded-full bg-indigo-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-dollar-sign text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Cost Effective</h3>
+                    <p class="text-gray-600">Reduce operational costs by up to 40% while maintaining service quality standards.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="mx-auto h-20 w-20 rounded-full bg-indigo-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Trained Professionals</h3>
+                    <p class="text-gray-600">Experienced agents with comprehensive training programs and ongoing skill development.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="mx-auto h-20 w-20 rounded-full bg-indigo-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-expand-arrows-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Scalable Solutions</h3>
+                    <p class="text-gray-600">Flexible staffing models that grow with your business needs and seasonal demands.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="mx-auto h-20 w-20 rounded-full bg-indigo-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Data Security</h3>
+                    <p class="text-gray-600">Secure infrastructure with data protection protocols and confidentiality agreements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section id="industries" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Industries We Support
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Specialized BPO services across various business sectors
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shopping-cart text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">E-Commerce</h3>
+                    <p class="text-gray-600 text-sm">Customer service, order management, and sales support.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Healthcare</h3>
+                    <p class="text-gray-600 text-sm">Patient support, appointment scheduling, and insurance assistance.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-money-bill-wave text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Financial Services</h3>
+                    <p class="text-gray-600 text-sm">Customer inquiries, account support, and transaction processing.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-plane text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Travel</h3>
+                    <p class="text-gray-600 text-sm">Booking support, itinerary changes, and customer assistance.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Technology</h3>
+                    <p class="text-gray-600 text-sm">Technical support, software assistance, and user onboarding.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-indigo-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Education</h3>
+                    <p class="text-gray-600 text-sm">Student support, enrollment assistance, and course information.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-home text-pink-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Real Estate</h3>
+                    <p class="text-gray-600 text-sm">Lead qualification, property inquiries, and client communication.</p>
+                </div>
+                
+                <div class="industry-icon bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="mx-auto h-16 w-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-truck text-cyan-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Logistics</h3>
+                    <p class="text-gray-600 text-sm">Shipment tracking, delivery coordination, and customer updates.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-600 mb-6">Need support for a different industry? Contact us to discuss your requirements.</p>
+                <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">Discuss Your Needs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-3xl font-extrabold sm:text-4xl mb-6">
+                        Ready to Optimize Your Customer Support?
+                    </h2>
+                    <p class="text-gray-300 mb-8">
+                        Contact our BPO specialists to discuss how we can help reduce your operational costs while improving customer satisfaction.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-indigo-400"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Phone</h4>
+                                <p class="text-gray-300">+254 700 123 456</p>
+                                <p class="text-gray-400 text-sm">Business hours: 8 AM - 6 PM EAT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-indigo-400"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-gray-300">info@sasaconnect.com</p>
+                                <p class="text-gray-400 text-sm">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-indigo-400"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Head Office</h4>
+                                <p class="text-gray-300">Westlands Business Park</p>
+                                <p class="text-gray-300">Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Get Your Free Consultation</h3>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="services" class="block text-sm font-medium text-gray-700 mb-1">Services Needed</label>
+                            <select id="services" name="services" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="">Select a service</option>
+                                <option value="voice">Voice Support</option>
+                                <option value="email">Email Support</option>
+                                <option value="chat">Live Chat</option>
+                                <option value="social">Social Media</option>
+                                <option value="backoffice">Back-Office Support</option>
+                                <option value="multiple">Multiple Services</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell us about your requirements</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your current customer support challenges and what you're looking for..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Send Inquiry
+                            </button>
+                        </div>
+                    </form>
+                    <div id="formMessage" class="mt-4 text-center hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xl">SC</div>
+                        <span class="ml-3 text-xl font-bold">Sasa Connect</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Professional offshore BPO services helping businesses deliver exceptional customer experiences while reducing operational costs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Voice Support</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Email Support</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Live Chat</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Social Media</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Back-Office</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#industries" class="text-gray-400 hover:text-white">Industries</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 Sasa Connect. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-gray-400 text-sm">
+                        Professional BPO Services | Nairobi, Kenya
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu) {
+                menu.classList.toggle('hidden');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            
+            // Simulate form processing
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                formMessage.innerHTML = '<div class="text-green-600 font-semibold">Thank you for your inquiry! We will contact you within 24 hours.</div>';
+                formMessage.classList.remove('hidden');
+                
+                // Reset form
+                this.reset();
+                submitBtn.textContent = 'Send Inquiry';
+                submitBtn.disabled = false;
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
